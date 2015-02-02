@@ -1,0 +1,20 @@
+title: Twitcher
+pri_colour: #fff
+sec_colour: #00801e
+thumbnail: /static/images/twitcher/thumbnail.jpg
+full: /static/images/twitcher/full.jpg
+tags: Image
+date: 1-1-2015
+
+{% extends "post.html" %}
+{% block body %}
+{% filter markdown %}
+
+Twitcher was the first iOS application that I wrote back in 2009. I don't profess to have an interest in ornithology, however, it gave me a way to learn the iOS SDK in a hands-on fashion.
+
+Launched in  2010, this application utilised many features of iOS to make bird recognition and recording more accessible. Featuring an identification system based on Core Data, sighting information recorded using Core Location, RSS feeds, MapKit, web-service integration and audio playback, Twitcher was the leader in its field.
+
+I removed Twitcher from sale in early 2014 to focus on other projects.
+
+{% endfilter %}
+{% endblock body %}

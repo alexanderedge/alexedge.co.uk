@@ -1,0 +1,23 @@
+title: Autographer
+pri_colour: #fff
+sec_colour: #fdc319
+thumbnail: /static/images/autographer/thumbnail.jpg
+full: /static/images/autographer/full.jpg
+tags: Image
+date: 3-1-2015
+
+<meta name="apple-itunes-app" content="app-id=653417932, affiliate-data=10lHPc">
+
+{% extends "post.html" %}
+{% block body %}
+{% filter markdown %}
+
+First to market with an intelligent, wearable camera, OMG Life asked me to build a companion app for [Autographer](http://www.autographer.com).
+
+The experience offered by the application is determined by its ablity to communicate with the Autographer seamlessly. To that end, considerable effort was spent creating a robust framework on which the application rests. This communication framework (based on Bluetooth 2.1 EDR) was designed from the ground-up alongside OMG Life engineers, ensuring each aspect was properly documented and tested.
+
+One of my favourite aspects of the Autographer app is the ability to create a video or GIF of images mixed with your favourite music in a custom editor. The images, each with location and sensor data, are transferred on-demand from the accessory via Bluetooth.
+
+
+{% endfilter %}
+{% endblock body %}

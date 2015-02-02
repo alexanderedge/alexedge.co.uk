@@ -1,0 +1,45 @@
+{% extends "index.html" %}
+{% block title %}Projects / {{ title }}{% endblock title %}
+{% block content %}
+
+	<section class="post clearfix">
+		<header id="header">
+
+			<div id="post-title"><h1><a id="post-home" href="/">Projects</a> / <span style="color:{{ sec_colour }}; background:{{ pri_colour }}">{{ title }}</span></h1></div>
+			{% block nav %}
+				{{ block.super }}
+			{% endblock nav %}
+		</header>
+
+		<article class="post">
+			<section class="post-body">
+
+				<img class="featured 2x" src="{% static full %}"/>
+
+				{% block body %}
+					This is where the post contents is.
+				{% endblock body %}
+			</section>
+		</article>
+
+		<footer class="post-footer">
+			<nav id="post-nav">
+				<span class="prev">
+				{% if nextProject %}
+					<a href='/{{ nextProject.path }}'>
+						<span class="arrow">&larr;</span>{{ nextProject.title }}
+					</a>
+				{% endif %}
+				</span>
+				<span class="next">
+					{% if prevProject %}
+						<a href='/{{ prevProject.path }}'>
+							{{ prevProject.title }}<span class="arrow">&rarr;</span>
+						</a>
+					{% endif %}
+				</span>
+			</nav>
+		</footer>
+	</section>
+
+{% endblock content %}

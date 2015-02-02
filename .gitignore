@@ -1,0 +1,5 @@
+config.json
+.build/
+.deploy/
+*.pxm
+*.iconsproj
