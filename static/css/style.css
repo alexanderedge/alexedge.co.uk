@@ -55,7 +55,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 html, body { height: 100%; }
 
 body {
-	font:16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font:16px/1 "proxima-nova", Helvetica, Arial, sans-serif;
 	color: #666;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
@@ -79,7 +79,7 @@ body {
 
 #nav li a {
 	color: #333;
-	font: bold 17px/1.7 "Helvetica Neue",helvetica,Arial,sans-serif;
+	font: bold 17px/1.7 "proxima-nova",helvetica,Arial,sans-serif;
 }
 
 #wrapper {
@@ -192,8 +192,11 @@ img {
 #footer {
 	border-top: 0px solid #eee;
 	font-size: 12px;
-	color: #aaa;
 	text-align: center;
+}
+
+#footer p {
+	color: #aaa;
 }
 
 /* Typography */
@@ -227,7 +230,7 @@ ul 	{ margin:0; padding:0; }
 li	{ list-style-type:circle; list-style-position:inside; }
 
 /* Line Height */
-#post-body, p { line-height:1.7; }
+#post-body, p { line-height:1.7; color: #222;}
 
 b, strong { font-weight: bold; }
 em, i { font-style: italic; }
@@ -242,7 +245,7 @@ h1 {
 	font-size: 30px;
 	letter-spacing: -1px;
 	color: #222;
-	font-weight: lighter;
+	font-weight: medium;
 }
 
 h2 {
@@ -253,7 +256,7 @@ h2 {
 .post h2 {
 	margin-bottom:2 0px;
 	color: inherit;
-	font: 400 18px/1.7em "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font: 400 18px/1.7em "proxima-nova",Helvetica,Arial,sans-serif;
 }
 
 .post h2.headline {
@@ -263,7 +266,7 @@ h2 {
 }
 
 #post-list h2 {
-	font: normal 17px/1.5em "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font: normal 17px/1.5em "proxima-nova",Helvetica,Arial,sans-serif;
 	color: #aaa;
 	max-width: 400px;
 	margin-top: 2px;
@@ -435,14 +438,14 @@ Post List
 #post-list a {
 	color: #333;
 	display: block;
-	font: bold 19px/1.7 "Helvetica Neue",helvetica,Arial,sans-serif;
+	font: bold 19px/1.7 "proxima-nova",helvetica,Arial,sans-serif;
 }
 
 #post-list .dates {
 	float: right;
 	position: relative;
 	top: 1px;
-	font: 300 17px/1.8 "Helvetica Neue",helvetica,Arial,sans-serif;
+	font: 300 17px/1.8 "proxima-nova",helvetica,Arial,sans-serif;
 	color: #bbb;
 }
 
@@ -593,7 +596,7 @@ h1.archive {
 
 h2.month {
 	width: 100%;
-	font: bold 13px/1 "Helvetica Neue",helvetica,Arial,sans-serif;
+	font: bold 13px/1 "proxima-nova",helvetica,Arial,sans-serif;
 	text-transform: uppercase;
 	margin-top: 40px;
 	margin-bottom: 10px;
@@ -607,7 +610,7 @@ h2.month {
 
 #archive-list a {
 	display: block;
-	font: bold 17px/1.7 "Helvetica Neue",helvetica,Arial,sans-serif;
+	font: bold 17px/1.7 "proxima-nova",helvetica,Arial,sans-serif;
 	color: #333;
 }
 
@@ -615,7 +618,7 @@ h2.month {
 	float: right;
 	position: relative;
 	top: 1px;
-	font: 300 17px/1.7 "Helvetica Neue",helvetica,Arial,sans-serif;
+	font: 300 17px/1.7 "proxima-nova",helvetica,Arial,sans-serif;
 	color: #bbb;
 }
 
@@ -626,9 +629,7 @@ h2.month {
 /* Media Queries */
 @media screen and (max-width: 540px) {
 	#wrapper { padding:20px 20px 20px 20px;}
-	#header { margin-bottom: 60px; border-bottom: 1px solid #eee; }
-	.post { margin: 40px 0; }
-	#footer { margin-top: 60px; }
+	#header { border-bottom: 1px solid #eee; }
 
 	#post-list, #archive-list { margin-top: 0; }
 	#post-meta { margin-top: 60px; }
