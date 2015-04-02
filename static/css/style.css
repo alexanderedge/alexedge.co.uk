@@ -168,6 +168,8 @@ img {
 	background: #fff;
 	width: 100%;
 	height: auto;
+	padding: 2px;
+	border: #eee solid 1px;
 }
 
 #thumbnails a span {
@@ -362,7 +364,6 @@ thead th,th {
 img {
 	width: 100%;
 	max-width: 100%;
-	border-radius: 3px;
 }
 
 /* Made with Cactus Badge */
@@ -401,6 +402,8 @@ Profile
 	width: 160px;
 	height: 160px;
 	border-radius: 50%;
+	padding: 2px;
+	border: #eee solid 1px;
 }
 
 #profile h1 {
