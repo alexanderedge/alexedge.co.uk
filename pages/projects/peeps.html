@@ -6,17 +6,22 @@ full: /static/images/peeps/full.jpg
 tags: Swift, Core Data, Core Animation, Core Graphics, AVFoundation, RestKit, AFNetworking, Twilio, Nexmo
 date: 8-1-2015
 
-<meta name="apple-itunes-app" content="app-id=881444366, affiliate-data=10lHPc">
-
 {% extends "post.html" %}
+
+{% block head %}
+  <meta name="apple-itunes-app" content="app-id=881444366, affiliate-data=10lHPc">
+  <meta name="description" content="Peeps: the fastest, most personal, and fun way to keep in touch">
+  <meta name="keywords" content="iOS,Swift,Objective-C,Messaging,Video,CoreGraphics,CoreData,AFNetworking,Parse,RestKit,SMS,iPad,iPhone">
+{% endblock head %}
+
 {% block body %}
 {% filter markdown %}
 
 [Peeps](http://www.peeps.im) lets you create selfie video chats with groups of friends. [Tom Cavill](https://twitter.com/tomcavill) and I released Peeps in July 2014, since then it has been featured by Apple and as App of the Week in ShortList magazine.
 
-I developed both the iOS and server components of Peeps employing, among many other technologies, RestKit, Parse, push notifications, third-party SMS integration (Twilio and Nexmo), custom-built phone number verification, video compression and iOS 8 animation APIs. Recently, I have added Watch support to Peeps using WatchKit.
+I developed both the iOS and server components of Peeps employing, among many other technologies, RestKit, Parse, [push notifications](https://developer.apple.com/notifications/), third-party SMS integration (Twilio and Nexmo), custom-built phone number verification, video compression and iOS 8 animation APIs. Recently, I have added Watch support to Peeps using [WatchKit](https://developer.apple.com/watchkit/).
 
-To date, approximately one-third of Peeps is written in Swift.
+To date, approximately one-third of Peeps is written in [Swift](https://developer.apple.com/swift/).
 
 Peeps is available for free on the [App Store](https://itunes.apple.com/gb/app/peeps/id881444366?mt=8&uo=4&ct=portfolio).
 

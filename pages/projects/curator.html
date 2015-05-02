@@ -6,9 +6,13 @@ full: /static/images/curator/full.jpg
 tags: Core Data, Core Graphics, Core Animation
 date: 7-1-2015
 
-<meta name="apple-itunes-app" content="app-id=593195406, affiliate-data=10lHPc">
-
 {% extends "post.html" %}
+
+{% block head %}
+<meta name="description" content="Curator – Visual Notes">
+<meta name="keywords" content="iOS,Objective-C,iPad,CoreData">
+{% endblock head %}
+
 {% block body %}
 {% filter markdown %}
 

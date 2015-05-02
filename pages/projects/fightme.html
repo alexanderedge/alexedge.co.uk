@@ -7,10 +7,18 @@ tags: Image
 date: 9-3-2015
 
 {% extends "post.html" %}
+
+{% block head %}
+<meta name="description" content="FightMe. The best 30 second challenges from around the world for you and your friends.">
+<meta name="keywords" content="iOS,Objective-C,AVFoundation,Video">
+{% endblock head %}
+
 {% block body %}
 {% filter markdown %}
 
-FightMe contacted me...
+[FightMe](https://www.fightme.com) asked me to rebuild their video recorder with square cropping, support for content stored on the device and a custom trim component for longer videos.
+
+Working alongside the design and development team, I used my knowledge of [AVFoundation](https://developer.apple.com/av-foundation/) and UIKit to create a custom video recorder and trim tool and integrate it into the existing codebase in a timely manner.
 
 {% endfilter %}
 {% endblock body %}
