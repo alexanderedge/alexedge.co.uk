@@ -55,7 +55,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 html, body { height: 100%; }
 
 body {
-	font:16px/1 "proxima-nova", Helvetica, Arial, sans-serif;
+	font:20px/1 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #666;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
@@ -79,7 +79,7 @@ body {
 
 #nav li a {
 	color: #333;
-	font: bold 17px/1.7 "proxima-nova",helvetica,Arial,sans-serif;
+	font: bold 17px/1.7;
 }
 
 #wrapper {
@@ -258,7 +258,7 @@ h2 {
 .post h2 {
 	margin-bottom:2 0px;
 	color: inherit;
-	font: 400 18px/1.7em "proxima-nova",Helvetica,Arial,sans-serif;
+	font: 400 18px/1.7em;
 }
 
 .post h2.headline {
@@ -268,7 +268,7 @@ h2 {
 }
 
 #post-list h2 {
-	font: normal 17px/1.5em "proxima-nova",Helvetica,Arial,sans-serif;
+	font: normal 17px/1.5em;
 	color: #aaa;
 	max-width: 400px;
 	margin-top: 2px;
@@ -441,14 +441,14 @@ Post List
 #post-list a {
 	color: #333;
 	display: block;
-	font: bold 19px/1.7 "proxima-nova",helvetica,Arial,sans-serif;
+	font: bold 19px/1.7;
 }
 
 #post-list .dates {
 	float: right;
 	position: relative;
 	top: 1px;
-	font: 300 17px/1.8 "proxima-nova",helvetica,Arial,sans-serif;
+	font: 300 17px/1.8;
 	color: #bbb;
 }
 
@@ -599,7 +599,7 @@ h1.archive {
 
 h2.month {
 	width: 100%;
-	font: bold 13px/1 "proxima-nova",helvetica,Arial,sans-serif;
+	font: bold 13px/1;
 	text-transform: uppercase;
 	margin-top: 40px;
 	margin-bottom: 10px;
@@ -613,7 +613,7 @@ h2.month {
 
 #archive-list a {
 	display: block;
-	font: bold 17px/1.7 "proxima-nova",helvetica,Arial,sans-serif;
+	font: bold 17px/1.7;
 	color: #333;
 }
 
@@ -621,7 +621,7 @@ h2.month {
 	float: right;
 	position: relative;
 	top: 1px;
-	font: 300 17px/1.7 "proxima-nova",helvetica,Arial,sans-serif;
+	font: 300 17px/1.7;
 	color: #bbb;
 }
 
