@@ -31,7 +31,7 @@ def preBuild(site):
 				continue
 
 			context = page.context()
-			context_project = {"path": page.path}
+			context_project = {"path": "/%s" % page.path}
 
 			# Check if we have the required keys
 			for field in ["title", "date", "tags", "thumbnail", "full", "pri_colour", "sec_colour"]:
