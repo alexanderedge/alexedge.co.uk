@@ -54,7 +54,6 @@ def preBuild(site):
 				get_template(page.path),
 				context=temp_project_context,
 				name=Global["config"]["project_body_block"])
-			logging.warning(context_project["published"])
 			if context_project["published"] == "true":
 				Global["projects"].append(context_project)
 
