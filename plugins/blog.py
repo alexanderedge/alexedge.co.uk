@@ -34,7 +34,7 @@ def preBuild(site):
 			context_project = {"path": "/%s" % page.path}
 
 			# Check if we have the required keys
-			for field in ["title", "date", "tags", "thumbnail", "full", "pri_colour", "sec_colour"]:
+			for field in ["title", "date", "tags", "thumbnail", "full", "pri_colour", "sec_colour", "published"]:
 
 				if not context.has_key(field):
 					logging.warning("Page %s is missing field: %s" % (page.path, field))
@@ -54,8 +54,9 @@ def preBuild(site):
 				get_template(page.path),
 				context=temp_project_context,
 				name=Global["config"]["project_body_block"])
-
-			Global["projects"].append(context_project)
+			logging.warning(context_project["published"])
+			if context_project["published"] == "true":
+				Global["projects"].append(context_project)
 
 	# Sort the projects by date and add the next and previous page indexes
 	Global["projects"] = sorted(Global["projects"], key=lambda x: x.get("date"))
