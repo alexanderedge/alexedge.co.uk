@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block head %}
-<meta name="description" content="iOS developer based in London">
+<meta name="description" content="Freelance iOS developer based in London">
 <meta name="keywords" content="iOS,Swift,Objective-C">
 {% endblock head %}
 
@@ -13,28 +13,24 @@
       <div id="profile-info">
       <h1>Alexander Edge</h1>
       <ul id="social">
+        <li><a class="icon-envelop" href="mailto:alex+portfolio@alexedge.co.uk?subject=Enquiry"><span class="hidden">Email</span></a></li>
         <li><a class="icon-twitter" href="https://twitter.com/alexedge"><span class="hidden">Twitter</span></a></li>
-        <li><a class="icon-linkedin" href="https://uk.linkedin.com/in/alexanderedge"><span class="hidden">LinkedIn</span></a></li>
         <li><a class="icon-stackoverflow" href="https://stackoverflow.com/users/755835/alexander"><span class="hidden">StackOverflow</span></a></li>
         <li><a class="icon-github" href="https://github.com/alexanderedge"><span class="hidden">GitHub</span></a></li>
       </ul>
       </div>
     </header>
     <div id="profile-text">
-      <p>I am an iOS developer with five years' experience creating apps for iPhone, iPad and iPod Touch. I have led engineering efforts for clients ranging from <a href="{% url '/projects/dattch.html' %}">location-based dating</a> to <a href="{% url '/projects/autographer.html' %}">wearable tech</a>, along with writing and delivering <a href="{% url '/projects/steer.html' %}">iOS training courses</a> here in London.</p>
-
-        <p>My most recent app, <a href="{% url '/projects/peeps.html' %}">Peeps</a>, is available to download for free on the <a href="https://itunes.apple.com/gb/app/peeps/id881444366?mt=8&uo=4&ct=portfolio">App Store</a>. I am currently <a href="http://www.wareable.com/apple-watch/awesome-indie-apple-watch-apps-1075">experimenting</a> with Watch.</p>
-
-        <p>I am <a href="mailto:alex@alexedge.co.uk?subject=I would like to work with you">available for hire</a>.</p>
-        </div>
+      <p>I have led engineering efforts on a variety of iPhone and iPad applications including <a href="{% url '/projects/peeps.html' %}">video messaging</a>, <a href="{% url '/projects/dattch.html' %}">location-based dating</a>, and <a href="{% url '/projects/autographer.html' %}">wearable tech</a>. I am a confident public speaker, having written and delivered multiple <a href="{% url '/projects/steer.html' %}">iOS training courses</a> in London.</p>
+      <p>If you need assistance with an existing app or are considering starting something new, <a href="mailto:alex+portfolio@alexedge.co.uk?subject=Enquiry">get in touch</a>.</p>
+    </div>
   </section>
 
   <section id="thumbnails" class="clearfix">
 
 		{% for project in projects %}
         <a href='{% url project.path %}'>
-          <img class="2x" width="300" height="300" src="{% static project.thumbnail %}"/>
-          <span>{{ projects.title }}</span>
+          <img class="2x" width="300" height="300" src="{% static project.thumbnail %}" alt="{{project.title}}" title="{{project.title}}"/>
         </a>
     {% endfor %}
 

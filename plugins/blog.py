@@ -74,7 +74,7 @@ def preBuildPage(site, page, context, data):
 	context['projects'] = Global["projects"]
 
 	for project in Global["projects"]:
-		if project["path"] == page.path:
+		if page.path in project["path"]:
 			context.update(project)
 
 	return context, data

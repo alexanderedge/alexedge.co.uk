@@ -1,7 +1,16 @@
 {% extends "index.html" %}
+
 {% block head %}
-  Head content
+	Head content
 {% endblock head %}
+
+{% block additional_head %}
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:image" content="{% static full %}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{ CURRENT_PAGE.absolute_final_url }}" />
+  <link rel="canonical" href="{{ CURRENT_PAGE.absolute_final_url }}" />
+{% endblock additional_head %}
 {% block title %}Projects / {{ title }}{% endblock title %}
 {% block content %}
 	<section class="post clearfix">
@@ -13,7 +22,7 @@
 		</header>
 		<article class="post">
 			<section class="post-body">
-				<img class="featured 2x" src="{% static full %}"/>
+				<img class="featured 2x" src="{% static full %}" alt='{{title}}' title='{{title}}' />
 				{% block body %}
 					This is where the post contents is.
 				{% endblock body %}
@@ -23,15 +32,15 @@
 			<nav id="post-nav">
 				<span class="prev">
 				{% if nextProject %}
-					<a href='/{{ nextProject.path }}'>
-						<span class="arrow">&larr;</span>{{ nextProject.title }}
+					<a href='{% url nextProject.path %}' rel="prev">
+						Previous: {{ nextProject.title }}
 					</a>
 				{% endif %}
 				</span>
 				<span class="next">
 					{% if prevProject %}
-						<a href='/{{ prevProject.path }}'>
-							{{ prevProject.title }}<span class="arrow">&rarr;</span>
+						<a href='{% url prevProject.path %}' rel="next">
+							Next: {{ prevProject.title }}
 						</a>
 					{% endif %}
 				</span>

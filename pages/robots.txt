@@ -1,5 +1,5 @@
 {% verbatim %}
-Sitemap: http://www.alexedge.co.uk/sitemap.xml
+Sitemap: https://www.alexedge.co.uk/sitemap.xml
 User-agent: *
 Disallow:
 {% endverbatim %}

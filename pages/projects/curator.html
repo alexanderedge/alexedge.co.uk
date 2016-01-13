@@ -9,16 +9,18 @@ date: 7-1-2015
 {% extends "post.html" %}
 
 {% block head %}
-<meta name="description" content="Curator – Visual Notes">
-<meta name="keywords" content="iOS,Objective-C,iPad,CoreData">
+  <meta name="description" content="Curator – Visual Notes">
+  <meta name="keywords" content="iOS,Objective-C,iPad,CoreData">
 {% endblock head %}
 
 {% block body %}
 {% filter markdown %}
 
-Featured by Apple, [Curator](http://curator.co) is _the_ way to collect, organise and present your ideas. Originally available only on iPad and in portrait, I worked with the team to release a universal application for iOS 8.0 that supports iPhone and iPad in both portrait and landscape orientations.
+[Curator](http://www.curator.co) is a fast and visual tool for collecting, organising and presenting your ideas. Originally made for use on iPad, I worked with the team to create a universal application for iOS 8 that supports iPhone and iPad in both portrait and landscape orientations.
 
-To keep data in sync across devices, I designed and implemented a solution that allows users to pick up where they left off on each device.
+Users can move seamlessly from working on iPad to presenting on iPhone by way of a custom sync solution built for Curator.
+
+Curator was featured by Apple in "Best New Apps" in June 2015.
 
 {% endfilter %}
 {% endblock body %}
